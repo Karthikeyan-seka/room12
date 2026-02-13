@@ -276,6 +276,19 @@ setupBtn("btnDown", "Down");
 setupBtn("btnLeft", "Left");
 setupBtn("btnRight", "Right");
 
+// Logic to close the Level Complete Panel
+const panelCloseBtn = document.getElementById("panelCloseBtn");
+
+if (panelCloseBtn) {
+    panelCloseBtn.addEventListener("click", () => {
+        // Hide the panel
+        document.getElementById("levelCompletePanel").classList.add("hidden");
+
+        // Optional: Remove blur if you want to see the clear background
+        // document.getElementById("bgImage").classList.remove("blur-bg");
+    });
+}
+
 // Panel Buttons
 document.getElementById("homeBtn").addEventListener("click", () => location.reload());
 document.getElementById("nextBtn").addEventListener("click", () => location.reload());
