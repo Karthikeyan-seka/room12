@@ -38,7 +38,7 @@ const mazeImg = new Image();
 mazeImg.src = "images/room12/puzzle.png";
 
 const keyImg = new Image();
-keyImg.src = "images/room12/key to open the door for room 1.png";
+keyImg.src = "images/room12/puzzle/key.png";
 
 // Debugging
 mazeImg.onerror = () => console.error("Error: puzzle.png not found");
